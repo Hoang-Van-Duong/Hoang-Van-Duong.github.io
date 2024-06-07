@@ -14,7 +14,7 @@ prev.onclick = function(){
     active = active - 1 >= 0 ? active - 1 : lengthItems;
     reloadSlider();
 }
-let refreshInterval = setInterval(()=> {next.click()}, 3000);
+let refreshInterval = setInterval(()=> {next.click()}, 8000);
 function reloadSlider(){
     slider.style.left = -items[active].offsetLeft + 'px';
     // 
@@ -23,7 +23,7 @@ function reloadSlider(){
     dots[active].classList.add('active');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next.click()}, 3000);
+    refreshInterval = setInterval(()=> {next.click()}, 8000);
 
     
 }
@@ -62,7 +62,7 @@ prev1.onclick = function(){
     active1 = active1 - 1 >= 0 ? active1 - 1 : lengthItems1;
     reloadSlider1();
 }
-let refreshInterval1 = setInterval(()=> {next1.click()}, 3000);
+let refreshInterval1 = setInterval(()=> {next1.click()}, 8000);
 function reloadSlider1(){
     slider1.style.left = -items1[active1].offsetLeft + 'px';
     // 
@@ -71,7 +71,7 @@ function reloadSlider1(){
     dots1[active1].classList.add('active1');
 
     clearInterval(refreshInterval);
-    refreshInterval = setInterval(()=> {next1.click()}, 3000);
+    refreshInterval = setInterval(()=> {next1.click()}, 8000);
 
     
 }
