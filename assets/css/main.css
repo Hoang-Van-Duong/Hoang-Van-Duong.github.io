@@ -259,7 +259,7 @@ input, select, textarea {
 }
 	@media screen and (min-width: 490px){
 		.slider{
-			height: 100px;
+			height: 200px;
 		}
 
 
