@@ -239,13 +239,55 @@ input, select, textarea {
 	}
 	.slider .dots li.active{
 		width: 30px;
+	}@media screen and (min-width: 0px){
+		.slider{
+			height: 100px;
+		}
+
+		.slider .buttons button{
+			width: 5px;
+			height: 0px;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.333);
+			color: #fff;
+			border: none;
+			font-family: monospace;
+			font-weight: bold;
+		}
+	
+	
+}
+	@media screen and (min-width: 490px){
+		.slider{
+			height: 100px;
+		}
+
+
+	
+	
+
 	}
-	@media screen and (max-width: 768px){
+	@media screen and (min-width: 640px){
+		.slider{
+			height: 300px;
+		}	.slider .buttons button{
+			width: 5rem;
+			height: 5rem;
+			border-radius: 50%;
+			background-color: rgba(255, 255, 255, 0.333);
+			color: #fff;
+			border: none;
+			font-family: monospace;
+			font-weight: bold;
+		}
+	}
+	@media screen and (min-width: 1000px){
 		.slider{
 			height: 400px;
 		}
 	}
-	@media screen and (max-width: 1680px){
+
+	@media screen and (min-width: 1680px){
 		.slider{
 			height: 600px;
 		}
