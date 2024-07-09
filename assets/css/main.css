@@ -72,6 +72,123 @@ input, select, textarea {
 	appearance: none;
 }
 
+.skill-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+	position: center;
+}
+
+.skill {
+    margin-bottom: 15px;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.skill-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 20px;
+}
+
+.skill-level {
+    background-color: #76c7c0;
+    height: 100%;
+    border-radius: 5px 0 0 5px;
+    transition: width 0.3s ease-in-out;
+}
+
+
+.skill-level[data-level="5"] {
+    width: 5%;
+}
+
+.skill-level[data-level="10"] {
+    width: 10%;
+}
+
+.skill-level[data-level="15"] {
+    width: 15%;
+}
+
+.skill-level[data-level="20"] {
+    width: 20%;
+}
+
+.skill-level[data-level="25"] {
+    width: 25%;
+}
+
+.skill-level[data-level="30"] {
+    width: 30%;
+}
+
+.skill-level[data-level="35"] {
+    width: 35%;
+}
+
+.skill-level[data-level="40"] {
+    width: 40%;
+}
+
+.skill-level[data-level="45"] {
+    width: 45%;
+}
+
+.skill-level[data-level="50"] {
+    width: 50%;
+}
+
+.skill-level[data-level="55"] {
+    width: 55%;
+}
+
+.skill-level[data-level="60"] {
+    width: 60%;
+}
+
+.skill-level[data-level="65"] {
+    width: 65%;
+}
+
+.skill-level[data-level="70"] {
+    width: 70%;
+}
+
+.skill-level[data-level="75"] {
+    width: 75%;
+}
+
+.skill-level[data-level="80"] {
+    width: 80%;
+}
+
+.skill-level[data-level="85"] {
+    width: 85%;
+}
+
+.skill-level[data-level="90"] {
+    width: 90%;
+}
+
+.skill-level[data-level="95"] {
+    width: 95%;
+}
+
+.skill-level[data-level="100"] {
+    width: 100%;
+}
 /* Basic */
 
 	@-ms-viewport {
@@ -154,7 +271,18 @@ input, select, textarea {
 		line-height: 2.375;
 	}
 
-
+	.image-container {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 15px;
+	}
+	
+	.image-container img {
+		height: auto;
+		width: 100%;
+		max-width: calc(33.333% - 10px); /* Drei Bilder nebeneinander mit 10px Abstand */
+		object-fit: cover; /* Sicherstellen, dass die Bilder gut in ihren Container passen */
+	}
 	.slider{
 		width: 100%;
 		max-width: 100%;
@@ -2800,6 +2928,37 @@ input, select, textarea {
 
 /* Image */
 
+.content-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Abstand zwischen Video und Bildern */
+    width: 100%; /* Container auf 90% der Seitenbreite */
+    max-width: 1500px; /* Maximale Breite des Containers */
+}
+
+.video-container1, .images-container1 {
+    flex: 1; /* Elemente wachsen und schrumpfen proportional */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-container1 video {
+    width: 100%; /* Video nimmt die volle Breite des Containers ein */
+    height: auto; /* Höhe wird proportional angepasst */
+    max-height: 1040px; /* Maximale Höhe des Videos */
+}
+
+.images-container1 img {
+    width: 100%; /* Bilder nehmen die volle Breite des Containers ein */
+    height: 100%; /* Höhe wird proportional angepasst */
+    max-height: 100%; /* Maximale Höhe der Bilder, unter Berücksichtigung des Abstands */
+    object-fit: cover; /* Sicherstellen, dass die Bilder gut in ihren Container passen */
+    
+}
+
+
  .meinbild{
 	display: block;
 			margin: 4rem 0;
@@ -2837,7 +2996,7 @@ input, select, textarea {
 
 		.image.fit {
 			display: block;
-			margin: 2.5rem 0;
+			margin: 1rem 0;
 			width: 100%;
 		}
 
