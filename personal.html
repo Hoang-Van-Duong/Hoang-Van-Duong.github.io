@@ -57,9 +57,50 @@
 							<header class="major">
 								<span class="date"></span><br>
 								<h1>Personal work</h1>
-								<h3>(most recent)</h3>
+								
 								<p></p>
 							</header>
+
+							<div class="video-container special-videos">
+								<video autoplay loop muted class="special-video" controls>
+									<source src="/video/DesertDrop.mp4" type="video/mp4">
+									Ihr Browser unterstützt das Video-Tag nicht.
+								</video>
+								<video class="special-video" controls>
+									<source src="/video/ShapeStack.mp4" type="video/mp4">
+									Ihr Browser unterstützt das Video-Tag nicht.
+								</video>
+							</div>
+							
+							<style>
+								/* Standard: Videos nebeneinander */
+								.special-videos {
+									display: flex;
+									justify-content: center;
+									gap: 10px;
+								}
+							
+								.special-video {
+									width: 45%;
+									height: auto;
+								}
+							
+								/* Stapeln NUR für diese Videos bei kleiner 735px */
+								@media (max-width: 735px) {
+									.special-videos {
+										flex-direction: column;
+										align-items: center;
+									}
+							
+									.special-video {
+										width: 80%;
+									}
+								}
+							</style>
+							
+							
+							
+							
 							<div class="video-container">
 								<video controls>
 									<source src="/video/WickedLowQuali.mp4" type="video/mp4">
@@ -73,12 +114,7 @@
 									Ihr Browser unterstützt das Video-Tag nicht.
 								</video>
 							</div>
-							<div class="video-container">
-								<video controls>
-									<source src="/video/ShapeStack.mp4" type="video/mp4">
-									Ihr Browser unterstützt das Video-Tag nicht.
-								</video>
-							</div>
+						
 							<div class="video-container">
 								<video controls>
 									<source src="/video/holycrab.mp4" type="video/mp4">
