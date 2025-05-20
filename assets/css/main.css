@@ -314,14 +314,14 @@ input, select, textarea {
 		height: 100%;
 	}
 	video {
-		margin-top: 5%;
+		margin-top: 0%;
 		width: 100%;
 		max-width: 100%;
 		height: auto;
 		object-fit: scale-down;
 	}
 	.video-hochkant {
-		margin-top: 5%;
+		margin-top: 0%;
 		width: 100%;
 		max-width: 50%;
 		height: auto;
